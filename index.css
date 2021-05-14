@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subsection{
+    height: 60vh;
+    width: 90%;
+    margin: 10%;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-radius: 10px;
+}
+.slogan-area{
+    background-color: cornsilk;
+    width: 50%;
+    height: 100%;
+    padding: 5%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: hsl(244, 38%, 16%);
+}
+.slogan-area h1{
+    font-size: 35px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+.slogan-area p{
+    font-size: 0.9rem;
+    width: 40ch;
+    padding-top: 20px;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+}
+.stats{
+    height: auto;
+    width: 70%;
+    padding-top: 15%;
+    font-size: 1.2rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.stats ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.stats ul h3{
+    color: #fff;
+}
+.stats ul sub{
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+
+.img-box{
+    width: 50%;
+    height: 100%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: linear-gradient(to bottom, hsla(278, 79%, 30%, 0.671), hsl(278, 79%, 30%, 0.671)), url('./image-header-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+@media only screen and (max-width:900px){
+    .subsection{
+        height: 50vh;
+        width: 90%;
+    }
+    .slogan-area h1{
+        font-size: 25px;
+    }
+    .slogan-area p{
+        font-size: 0.7rem;
+        width: 38ch;
+        padding-top: 20px;
+    }
+    .stats{
+        height: auto;
+        width: 70%;
+        padding-top: 20%;
+        font-size: 0.8rem;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+    .stats ul sub{
+        color: hsla(0, 0%, 100%, 0.6);
+        text-transform: uppercase;
+        font-size: 0.5rem;
+        font-weight: 400;
+    }
+}
+@media only screen and (max-width:768px){
+    .main{
+        height: auto;
+    }
+    .subsection{
+        height: auto;
+        width: 90%;
+        margin: 10% 5%;
+        display: flex;
+        flex-direction: column-reverse;
+        border: none;
+        border-radius: 10px;
+    }
+    .slogan-area{
+        width: 100%;
+        height: auto;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0;
+        background-color: hsl(244, 38%, 16%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .img-box{
+        width: 100%;
+        height: 50vh;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 10px;
+        background-image: linear-gradient(to bottom, hsla(278, 79%, 30%, 0.671), hsl(278, 79%, 30%, 0.671)), url('./image-header-desktop.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center;
+    }
+    .slogan-area h1{
+        font-size: 30px;
+        padding-top: 20px;
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+        width: 15ch;
+    }
+    .slogan-area p{
+        font-size: 1rem;
+        width: 28ch;
+        padding-top: 40px;
+        font-weight: 400;
+        line-height: 1.5rem;
+        color: hsla(0, 0%, 100%, 0.75);
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+    }
+    .stats{
+        height: 80%;
+        width: 100%;
+        padding-top: 15%;
+        font-size: 1.2rem;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+    .stats ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .stats li{
+        margin: 20px;
+    }
+    .stats ul sub{
+        color: hsla(0, 0%, 100%, 0.6);
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: 400;
+    }
+}
